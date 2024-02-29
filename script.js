@@ -329,7 +329,6 @@ const checkForms = function () {
   const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
   const selectedBarber = document.querySelector(".select-field").value;
 
-  // Clear existing error messages
   clearErrorMessages();
 
   if (
@@ -372,18 +371,16 @@ const checkForms = function () {
 };
 console.log(dateSpan.textContent === "");
 
-// Function to display error message next to the input field
+// Displaying error message next to the input field
 function displayErrorMessage(inputField, message) {
-  // Create error message element
   const errorMessage = document.createElement("div");
   errorMessage.classList.add("error-message");
   errorMessage.textContent = message;
 
-  // Insert error message after the input field
   inputField.insertAdjacentElement("afterend", errorMessage);
 }
 
-// Function to clear existing error messages
+// Clearing existing error messages
 function clearErrorMessages() {
   const errorMessages = document.querySelectorAll(".error-message");
   errorMessages.forEach((message) => message.remove());
