@@ -1,0 +1,15 @@
+Design ->
+1. black & white page
+3. Header section
+2. About section - make moving images after click on right/left arrow in the right section
+3. What do we do section with images of some haircuts
+3. Footer section
+
+Functions -> 
+1. Create an apointment - some calendar, maybe posibility to choose barber ✔
+
+Calendar:
+Clicking on arrows will change months. ✔
+Year should not be passed in HTML, but as Date() function on js. ✔
+Somehow make calendar dates to fit with real dates. ✔
+When some date is clicked, there should appear some circle around that date. ✔ partly done

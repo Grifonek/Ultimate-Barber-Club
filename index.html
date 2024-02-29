@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Barber Club</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <ul class="side__bar">
+            <li class="hideBar"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">Get new haircut</a></li>
+            <li><a href="#" class="scroll aboutUsBtn">About Us</a></li>
+            <li><a href="#" class="scroll whatDoWeDoBtn">What we do?</a></li>
+            <li><a href="#" class="scroll contactsBtn">Contacts</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Ultimate Barber Club</a></li>
+            <li class="hideOnMobile" id="goToOrder"><a href="#">Get New Haircut</a></li>
+            <li class="hideOnMobile" id="scroll"><a href="#about--section">About Us</a></li>
+            <li class="hideOnMobile" id="scroll"><a href="#haircuts--section">What Do We Do?</a></li>
+            <li class="hideOnMobile" id="scroll"><a href="#footer--section">Contacts</a></li>
+            <li class="openBar"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img src="img/header.jpg" alt="headerImg">
+        <div class="quote">
+            <p>❝Life is too short to have <br> boring hairstyle.❞</p>
+            <h3>Ultimate Barber Club</h3>
+        </div>
+    </header>
+
+    <section class="about" id="about--section">
+        <div class="about__box">
+            <div class="left">
+                <h2>Who we are?</h2>
+                <p>We are a group of people who simply love their job.</p>
+            </div>
+            <div class="right slider">
+                <div class="slide slide__1">
+                        <img src="img/about2.jpg" alt="aboutImg">
+                </div>
+                <div class="slide slide__2">
+                        <img src="img/about.jpg" alt="aboutImg">
+                </div>
+                <div class="slide slide__3">
+                        <img src="img/about3.jpg" alt="aboutImg">
+                </div>
+
+                <button class="slider__btn slider__btn--left">&larr;</button>
+                <button class="slider__btn slider__btn--right">&rarr;</button>
+                <div class="dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="haircuts__section" id="haircuts--section">
+        <div class="haircuts">
+            <h1>What do we do?</h1>
+            <div class="haircut l">
+                <img src="img/fade.jpg" alt="fadeImg">
+                <h2>Sharp, sleek fade — undeniable style.</h2>
+            </div>
+            <div class="haircut r">
+                <img src="img/unusuall.jpg" alt="unusuallImg">
+                <h2>Unleash your uniqueness with our unconventional cuts.</h2>
+            </div>
+            <div class="haircut l">
+                <img src="img/long.jpg" alt="longImg">
+                <h2>Embrace elegance with our captivating long hairstyles.</h2>
+            </div>
+            <div class="haircut r">
+                <img src="img/boy.jpg" alt="boyImg">
+                <h2>From kids to seniors, we cater to all ages with expert cuts and personalized service.</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="order__section">
+        <div class="order">
+            <h2>Ultimate Barber Club is here for you...</h2>
+            <button>Get A New Look!</button>
+        </div>
+    </section>
+
+    <div class="border"></div>
+
+    <footer id="footer--section">
+        <div class="new_footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                            <p>Don’t miss any updates of our new haircuts!</p>
+                            <form class="f_subscribe_two mailchimp">
+                                <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                                <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                                <p class="mchimp-errmessage" style="display: none;"></p>
+                                <p class="mchimp-sucmessage" style="display: none;"></p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                            <ul class="list-unstyled f_list">
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Term &amp; conditions</a></li>
+                                <li><a href="#">Reporting</a></li>
+                                <li><a href="#">Documentation</a></li>
+                                <li><a href="#">Support Policy</a></li>
+                                <li><a href="#">Privacy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Socials</h3>
+                            <div class="f_social_icon">
+                                <a href="https://www.instagram.com/max_demel" class="fa fa-instagram"></a>
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="#" class="fa fa-pinterest"></a>
+                                <a href="#" class="fa fa-facebook"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bg">
+                <div class="footer_bg_one"></div>
+                <div class="footer_bg_two"></div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-7">
+                        <p class="mb-0 f_400">
+                            &copy; COPYRIGHT BY <a href="https://github.com/Grifonek" class="copyright__link">Max Demel</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="goBack" style="display: none;">&#8610;<span>Go Back</span></div>
+    <section class="calendar" style="display: none;">
+        <div class="month">
+            <a href="#" class="navCal l">
+                <i class="fa fa-angle-left"></i>
+            </a>
+            <div class="curMonth"> <span class="year"></span></div>
+            <a href="#" class="navCal">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </div>
+        <div class="days">
+            <span>Mon</span>
+            <span>Tue</span>
+            <span>Wed</span>
+            <span>Thu</span>
+            <span>Fri</span>
+            <span>Sat</span>
+            <span>Sun</span>
+        </div>
+        <div class="dates">
+            <!-- <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>10</button>
+            <button>11</button>
+            <button>12</button>
+            <button>13</button>
+            <button>14</button>
+            <button>15</button>
+            <button>16</button>
+            <button>17</button>
+            <button>18</button>
+            <button>19</button>
+            <button>20</button>
+            <button>21</button>
+            <button>22</button>
+            <button>23</button>
+            <button>24</button>
+            <button>25</button>
+            <button>26</button>
+            <button>27</button>
+            <button>28</button>
+            <button>29</button>
+            <button>30</button>
+            <button>31</button> -->
+        </div>
+    </section>
+
+    <section class="form" style="display: none;">
+        <div class="name">
+            <form>
+                <label for="name">First name:</label>
+                <input type="text" name="name" id="name" required>
+
+                <label for="surname">Surname:</label>
+                <input type="text" name="surname" id="surname" required>
+            </form>
+        </div>
+        <div class="contact">
+            <form>
+                <label for="phone">Phone number:</label>
+                <input type="text" name="phone" id="phone" required>
+
+                <label for="email">E-mail:</label>
+                <input type="text" name="email" id="email" required>  
+            </form>
+        </div>
+        <div class="date">Date: <span name="date"></span></div>
+        <label for="field"><span>Choose barber:</span>
+            <select name="field" class="select-field">
+                <option value="" disabled selected hidden>Select Barber</option>
+                <option value="barber1">Razor Sharp Rick</option>
+                <option value="barber2">Clipper King Carl</option>
+                <option value="barber3">Shear Genius Sam</option>
+                <option value="barber4">Trimmer Tim</option>
+                <option value="barber5">Barber Boss Barry</option>
+            </select>
+        </label>
+        <button type="submit" id="submit">SUBMIT YOUR ORDER</button>
+    </section>
+
+    <section class="order__message" style="display: none;">
+        <img src="img/check-mark.png" alt="check-mark">
+        <div>
+            <h1>Thank you</h1>
+            <h3>Your appointment has been successfully scheduled on</h3>
+            <h2>Get your hair ready to be <span class="highlighted-phrase">elevated to new heights!</span></h2>
+            <h2>You will be taken to the main page in <span id="countdown">5</span> seconds.</h2>
+        </div>
+    </section>
+
+</body>
+</html>
