@@ -369,7 +369,6 @@ const checkForms = function () {
     form.style.display = "none";
   }
 };
-console.log(dateSpan.textContent === "");
 
 // Displaying error message next to the input field
 function displayErrorMessage(inputField, message) {
